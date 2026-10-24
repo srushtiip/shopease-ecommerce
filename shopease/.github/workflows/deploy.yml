@@ -1,4 +1,4 @@
-
+```yaml
 name: Deploy ShopEase
 
 on:
@@ -18,25 +18,22 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Setup Node.js
+      - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
           node-version: 22
           cache: npm
-          cache-dependency-path: shopease/package-lock.json
 
       - name: Install dependencies
-        working-directory: shopease
         run: npm ci
 
       - name: Build website
-        working-directory: shopease
         run: npm run build
 
       - name: Upload website
         uses: actions/upload-pages-artifact@v3
         with:
-          path: shopease/dist
+          path: dist
 
   deploy:
     needs: build
@@ -48,3 +45,4 @@ jobs:
       - name: Publish
         id: deployment
         uses: actions/deploy-pages@v4
+```

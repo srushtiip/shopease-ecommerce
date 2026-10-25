@@ -1,14 +1,14 @@
 import { useMemo, useState } from "react";
 import "./App.css";
 
-import shoesImg from "./assets/shoes.png";
-import headphonesImg from "./assets/headphones.png";
-import bagImg from "./assets/bag.png";
-import watchImg from "./assets/watch.png";
-import tshirtImg from "./assets/tshirt.png";
-import speakerImg from "./assets/speaker.png";
-import sunglassImg from "./assets/sunglass.png";
-import bottleImg from "./assets/bottle.png";
+import bagImg from "../bag.png";
+import bottleImg from "../bottle.png";
+import headphonesImg from "../headphones.png";
+import shoesImg from "../shoes.png";
+import speakerImg from "../speaker.png";
+import sunglassImg from "../sunglass.png";
+import tshirtImg from "../tshirt.png";
+import watchImg from "../watch.png";
 
 const products = [
   { id: 1, name: "Classic Sneakers", category: "Fashion", price: 1499, emoji: "👟", color: "#f2e8dd", tag: "Bestseller", image: shoesImg },

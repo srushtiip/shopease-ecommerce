@@ -1,16 +1,24 @@
-
 import { useMemo, useState } from "react";
 import "./App.css";
 
+import shoesImg from "./assets/shoes.png";
+import headphonesImg from "./assets/headphones.png";
+import bagImg from "./assets/bag.png";
+import watchImg from "./assets/watch.png";
+import tshirtImg from "./assets/tshirt.png";
+import speakerImg from "./assets/speaker.png";
+import sunglassImg from "./assets/sunglass.png";
+import bottleImg from "./assets/bottle.png";
+
 const products = [
-  { id: 1, name: "Classic Sneakers", category: "Fashion", price: 1499, emoji: "👟", color: "#f2e8dd", tag: "Bestseller",  image:"shoes.png" },
-  { id: 2, name: "Wireless Headphones", category: "Electronics", price: 2499, emoji: "🎧", color: "#e6e8f7", tag: "Popular", image:"headphones.png" },
-  { id: 3, name: "Backpack", category: "Accessories", price: 1199, emoji: "🎒", color: "#e5eee4", tag: "New", image:"bag.png" },
-  { id: 4, name: "Smart Watch", category: "Accessories", price: 1899, emoji: "⌚", color: "#f3e4e6", tag: "", image:"watch.png" },
-  { id: 5, name: "Cotton T-Shirt", category: "Fashion", price: 699, emoji: "👕", color: "#e7edf2", tag: "",  image:"tshirt.png" },
-  { id: 6, name: "Smart Speaker", category: "Electronics", price: 3299, emoji: "🔊", color: "#f1eadc", tag: "Popular",  image:"speaker.png" },
-  { id: 7, name: " Sunglasses", category: "Fashion", price: 899, emoji: "🕶️", color: "#e7e5f3", tag: "",  image:"sunglass.png" },
-  { id: 8, name: " Water Bottle", category: "Accessories", price: 499, emoji: "🧴", color: "#dcecf0", tag: "New" ,  image:"bottle.png"},
+  { id: 1, name: "Classic Sneakers", category: "Fashion", price: 1499, emoji: "👟", color: "#f2e8dd", tag: "Bestseller", image: shoesImg },
+  { id: 2, name: "Wireless Headphones", category: "Electronics", price: 2499, emoji: "🎧", color: "#e6e8f7", tag: "Popular", image: headphonesImg },
+  { id: 3, name: "Backpack", category: "Accessories", price: 1199, emoji: "🎒", color: "#e5eee4", tag: "New", image: bagImg },
+  { id: 4, name: "Smart Watch", category: "Accessories", price: 1899, emoji: "⌚", color: "#f3e4e6", tag: "", image: watchImg },
+  { id: 5, name: "Cotton T-Shirt", category: "Fashion", price: 699, emoji: "👕", color: "#e7edf2", tag: "", image: tshirtImg },
+  { id: 6, name: "Smart Speaker", category: "Electronics", price: 3299, emoji: "🔊", color: "#f1eadc", tag: "Popular", image: speakerImg },
+  { id: 7, name: "Sunglasses", category: "Fashion", price: 899, emoji: "🕶️", color: "#e7e5f3", tag: "", image: sunglassImg },
+  { id: 8, name: "Water Bottle", category: "Accessories", price: 499, emoji: "🧴", color: "#dcecf0", tag: "New", image: bottleImg },
 ];
 
 const categories = ["All", "Fashion", "Electronics", "Accessories"];
